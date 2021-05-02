@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClovekObservableHomework"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="25">
+        Title="MainWindow" Height="450" Width="800" FontSize="12">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -27,14 +27,14 @@
         <ListBox x:Name="MainListBox" Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" SelectionChanged="MainListBox_SelectionChanged">
             
         </ListBox>
-        
-        <Label Name="nameLabel" Grid.Row="1" Grid.Column="2" Content="Jméno:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Name="lastnameLabel" Grid.Row="2" Grid.Column="2" Content="Příjmení:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Name="birthYearLabel" Grid.Row="3" Grid.Column="2" Content="Rok narození:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <TextBox Name="nameBox" Grid.Row="1" Grid.Column="3" Text="sem jmeno" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-        <TextBox Name="LastNameBox" Grid.Row="2" Grid.Column="3" Text="sem prijmeni" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-        <TextBox Name="birthYearBox" Grid.Row="3" Grid.Column="3" Text="sem rok narozeni" VerticalAlignment="Center" Grid.ColumnSpan="2" PreviewTextInput="birthYearBox_PreviewTextInput"/>
+        <Label Name="nameLabel" Grid.Row="1" Grid.Column="2" Content="Jméno:" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="lastnameLabel" Grid.Row="2" Grid.Column="2" Content="Příjmení:" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="birthYearLabel" Grid.Row="3" Grid.Column="2" Content="Rok narození:" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBox Name="nameBox" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBox Name="lastNameBox" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBox Name="birthYearBox" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Grid.ColumnSpan="2" PreviewTextInput="birthYearBox_PreviewTextInput"/>
 
         <Button x:Name="addButton" Grid.Row="4" Grid.Column="2" Content="přidat člověka" FontSize="20" Margin="10" Click="AddButton_Click"/>
         <Button x:Name="removeButton" Grid.Row="4" Grid.Column="3" Content="odebrat člověka" FontSize="20" Margin="10" Click="RemoveButton_Click"/>
