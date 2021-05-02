@@ -12,17 +12,43 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace ClovekObservableHomework
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        public ObservableCollection<Human> humans;
+
         public MainWindow()
         {
             InitializeComponent();
+            MainListBox.ItemsSource = humans;
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RemoveButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ChangeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MainListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void birthYearBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
         }
     }
 }
